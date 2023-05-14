@@ -1,0 +1,9 @@
+@startuml
+(Pagar) <|-- (Pagar con tarjeta)
+(Pagar) <|-- (Pagar en efectivo)
+
+left to right direction
+:Cliente: -- (Reservar un vuelo)
+:Cliente VIP: -- (Elegir asientos)
+:Cliente: <|- :Cliente VIP:
+@enduml
