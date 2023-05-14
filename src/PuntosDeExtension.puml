@@ -1,0 +1,13 @@
+@startuml
+usecase sd as "Sacar dinero
+--
++ solicitud hecha"
+sd <.. (Retener tarjeta) #green : <<Extend>>
+skinparam usecase {
+BackgroundColor LightGreen
+BorderColor DarkSlateGray
+}
+note "Description\n--\ncondición:\n     {historia sospechosa}\npunto de extensión:\n    solicitud hecha" as n1
+n1 . sd #black;line.dotted
+n1 . (Retener tarjeta) #black;line.dotted
+@enduml

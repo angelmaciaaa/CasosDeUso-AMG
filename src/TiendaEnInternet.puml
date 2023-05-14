@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+:new Actor: -- (identificarse)
+(identificarse) <.. (Registrarse) : <<extend>>
+:new Actor: -- (Pagar)
+(Pagar) <|-- (Pagar con tarjeta)
+(Pagar) <|-- (Pagar con transferencia)
+:new Actor: -- (Elegir mensajero)
+:new Actor: -- (Confirmar)
+@enduml

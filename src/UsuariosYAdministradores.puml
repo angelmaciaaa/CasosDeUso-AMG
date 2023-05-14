@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+:Usuario: -- (Inicia sesión)
+:Usuario: -- (Recuperar contraseña)
+:Usuario: -- (Modificar contraseña)
+:Usuario: -- (Cerrar sesión)
+:Usuario: <|- :Administrador:
+:Administrador: -- (Registrar usuario)
+:Administrador: -- (Instalar programa)
+@enduml

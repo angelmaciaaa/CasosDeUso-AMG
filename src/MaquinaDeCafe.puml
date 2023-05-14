@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+:Cliente: --- (Meter dinero)
+:Cliente: --- (Pedir azucar)
+:Cliente: --- (Pedir producto)
+(Pedir producto) ..> (Devolver dinero) : <<include>>
+:Cliente: --- (Cancelar)
+(Cancelar) ..> (Devolver dinero) : <<include>>
+@enduml
